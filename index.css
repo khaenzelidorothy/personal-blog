@@ -2,231 +2,525 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
-    background: linear-gradient(to right, #010729, #040614);
-    font-family: "Poppins";
+  overflow-x: hidden;
+  margin: 0%;
 }
-.image img{
-    background-size: cover;
-    border: 14px solid white;
-    width: 130%;
-    height: 80vh;
-    margin-bottom: 29%;
-    opacity: 0.5;
+.navigation{
+  background: url(images/book.png);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: darken;
+  color: white;
 }
-.container{
-    margin-left: 19%;
-    margin-top: 5%;
+#like-section {
+  text-align: center;
+  margin-top: 0.5%;
+}
+#like-btn {
+  background-color: #FF4D6D;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px 5px ;
+  cursor: pointer;
+}
+#like-btn:hover {
+  background-color: #004D4D;
+  color: #FF4D6D;
+}
+#like-count {
+  font-size: medium;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+nav {
+  background-image: linear-gradient(#212A31, #2E3944);
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  position: sticky;
+  width: 100%;
+  padding: 1%;
+}
+.navbar a{
+  justify-content: space-between;
+}
+nav a {
+  font-weight: bolder;
+  font-size: 22px;
+}
+nav a:hover {
+  color: #FFBF00;
+}
+.explore{
+  display: flex;
+  margin-top: 34%;
+  padding: 3%;
+  gap: 22%;
+}
+.explore button{
+  padding: 14% 69%;
+  border-radius: 32px 32px;
+  border-color: transparent;
+}
+.explore button:hover{
+  border-radius: 32px;
+  background-color: black;
+  color: blue;
+}
+.icons a{
+  color: white;
+}
+.icons a:hover{
+  background-color: black;
+  color: white;
+}
+.moral{
+  display: flex;
+  gap: 10%;
+  padding: 10%;
+  background-image: linear-gradient(#212A31, #2E3944);
+  /* background-color: rgb(17, 16, 15); */
+  font-size: 32px;
+  color: white;
+}
+.about-moral{
+  font-size: 0.4in;
+  font-weight:900;
+}
+.about-moral h3{
+  color: rgba(197, 158, 107, 0.897);
+  font-weight: 1000;
+  font-size: 0.6in;
+}
+.picture-section{
+  position: relative;
+  margin-left: 28%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+}
+.explore h2{
+  font-size: 0.7in;
+  margin-top: -32%;
+  margin-left: 12%;
+  line-height: 2.5cm;
+}
+#image2{
+  border-radius: 22px;
+  position: absolute;
+  right: 100px;
+  top: -22%;
+  box-shadow: 22px 25px 15px -10px rgba(0,0,0,0.4);
+}
+#image1{
+  border-radius: 20px;
+  box-shadow: 22px 25px 15px -10px rgba(0,0,0,0.4);
 }
 
-.about{
-    display: flex;
+.quotes {
+    position: relative;
+    border: solid 1px #212121;
+    padding: 65px 50px 60px 60px;
+    background-color: white;
+    border-radius: 22px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    width: 50vw;
+    margin-left: 25%;
+    padding-bottom: 8%;
 }
-.about h2{
+.theQuotes{
+  margin-bottom: -6%;
+  font-size: 22px;
+}
+.theQuotes h2{
+  padding-left: 42%;
+}
+  .prev, .next{
     position: absolute;
-    margin-left: -22%;
+    border-color: rgb(87, 86, 86);
+    transition: 0.6s ease;
+    user-select: none;
+    
+ }
+
+  .prev{
+    margin-left: -3%;
+    margin-top: -2%;
+  }
+  .next{
+    margin-top: -2%;
+    margin-left: 90%;
+  }
+  .images {
+    width: 90vw;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+  }
+ @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  } 
+ 
+  .feedback{
+    padding-left: 32%;
+    margin-bottom: 2%;
+  }
+  footer {
+    background-image: linear-gradient(#212A31, #2E3944);
     color: white;
-    font-size: 0.4in;
-}
-.naming-book{
-    position: absolute;
-    width: 20vw;
-    height: 25vw;
-    background-color: white;
-    line-height: 0.8cm;
-    backdrop-filter: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    padding: 3%;
-    margin-top: -40%;
-    margin-left: 42%;
-    transform: rotate(-12deg);
-    border-radius: 15% 15%;
-
-}
-.naming-book img{
-    width: 5vw;
-    height: 9vh;
-    border-radius:50% 50%;
-    border: 3px solid rgb(4, 4, 37);
-    margin-top: -30%;
-    margin-left: 31%;
-}
-.naming-book strong{
-    display: flex;
-    justify-content: center;
-    padding-top: 9%;
-    color: rgb(4, 4, 37);
-}
-.review{
-    width: 60vw;
-    height: 125vh;
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5%;
-    box-shadow: 12px 15px 12px rgb(63, 63, 148),12px 15px 12px rgb(63, 63, 148);
-}
-.review p{
-    line-height: 1cm;
-    margin: 4%;
-}
-.review h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
-}
-#author{
-    display: flex;
-    justify-content: center;
-}
-.fa-whatsapp{
-    border: 1px solid;
- border-radius: 50% 50%;
- padding: 22%;
- /* background-color: black; */
-}
-.fa-facebook{
-    border: 1px solid;
-    border-radius: 50% 50%;
-    padding: 42%;
-}
-.icons{
-    display: flex;
-    justify-content: center;
-    gap: 1cm;
-    margin-top: 18%;
-}
-
-@media screen and (min-width:300px) and (max-width:950px){
+    justify-content:space-between;
+  }
+  .footer-content{
+    line-height: 3;
+    font-size: 120%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .copy-right{
+    text-align: center;
+    color:#ffbf00;
+  }
+  .footer-nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .location{
+    line-height: 1;
+  }
+  .location p:nth-child(2){
+    font-size: 0.7em;
+  }
+  footer input{
+    padding:3%;
+    width:100%;
+  }
+  .socials i{
+  margin-left: 10px;
+  font-size: large;
+  }
+  .socials{
+    line-height: 1;
+  }
+  #mailbox{
+    padding:3%;
+    width:30%;
+    border-radius: 50px;
+    border-color: transparent;
+  }
+  #pic{
+    width: 13vw;
+    height: 35vh;
+  }
+  #pics{
+    width: 12vw;
+    height: 35vh;
+  }
+  #first-pic{
+    width:15vw;
+    height: 43vh;
+  }
+  #second-pic{
+    width: 13vw;
+    height: 35vh;
+  }
+  #third-pic{
+    width: 21vw;
+    height: 35vh;
+  }
+  #fourth-pic{
+    height: 36vh;
+  }
+  #fifth-pic{
+    width: 13vw;
+    height: 35vh;
+  }
+  #last-pic{
+    width:35vh;
+  }
+  .button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: bisque;
+  }
+  .feedback h2{
+    color: white;
+  }
+  .fa-whatsapp{
+    margin-left: -30%;
+    
+  }
+  .fa-facebook{
+    margin-left: 18%;
+  }
+  @media screen and (min-width: 320px) and (max-width: 950px){
     body{
-        overflow-x: hidden;
-        width: 100%;
-        font-size: 0.7em;
-        /* overflow-x: hidden; */
-    }
-    .about{
-        display: block;
+      font-size: 0.7em;
+      overflow-x: hidden;
     }
     .container{
-        margin-left: 4%;
-        margin-top: 2%;
+      overflow-x: hidden;
+      margin-right: 10%;
     }
-    .naming-book{
-        position: unset;
-        width: 85vw;
-        height: 85vw;
-        background-color: white;
-        line-height: 0.6cm;
-        backdrop-filter: 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        padding: 3%;
-        margin-top: -20%;
-        margin-left: 2%;
-        transform: none;
-        border-radius: 15% 15%;
-    
+    nav {
+      background-image: linear-gradient(#212A31, #2E3944);
+      display: block;
+      justify-content: space-around;
+      align-items:center;
+      position: sticky;
+      width: 100%;
+      padding: 1%;
     }
-    .image img{
-        border: 14px solid white;
-        width: 93%;
-        height: 40vh;
-        margin-bottom: 29%;
-        opacity: 0.5;
+    .navbar li{
+      display: block;
     }
-    .review{
-        width: 90vw;
-        height: 95vh;
-        background-color: white;
-        opacity: 0.8;
-        border-radius: 5%;
-        box-shadow: 12px 15px 12px rgb(63, 63, 148),12px 15px 12px rgb(63, 63, 148);
+    nav a{
+      font-size: 1.2em;
     }
-    .review p{
-        line-height: 0.4cm;
-        margin: 4%;
+    .navigation{
+      background: url(images/book.png);
+      background-size: cover;
+      width: 80vw;
+      height: 70vh;
+      background-repeat: no-repeat;
+      background-color: rgba(0,0,0,0.6);
+      background-blend-mode: darken;
+      color: white;
     }
-    .about h2{
-        position: absolute;
-        margin-top: -83%;
-        margin-left: 25%;
-        color: white;
-        font-size: 1.5em;
+    .explore{
+      display: block;
+      margin-top: 34%;
+      padding: 3%;
+      gap: 22%;
     }
-    .naming-book img{
-        width: 15vw;
-        height: 7vh;
-        border-radius:50% 50%;
-        border: 3px solid rgb(4, 4, 37);
-        margin-top: -28%;
-        margin-left: 37%;
+    .explore button{
+      padding: 4% 12%;
+      border-radius: 32px 32px;
+      border-color: transparent;
     }
-    .icons{
-        display: flex;
-        justify-content: center;
-        gap: 1cm;
-        margin-top: 5%;
+    .explore button:hover{
+      border-radius: 32px;
+      background-color: black;
+      color: blue;
     }
-}
-@media screen and (min-width:750px) and (max-width:1300px){
-   body{
-    font-size: 1.2em;
+    .icons a{
+      color: white;
+    }
+    .icons a:hover{
+      background-color: black;
+      color: white;
+    }
+    .explore h2{
+      font-size: 0.3in;
+      /* font-size: 0.5em; */
+      margin-top: -22%;
+      margin-left: 2%;
+      line-height: 1.2cm;
+    }
+    .moral{
+      display: block;
+      gap: 10%;
+      padding: 2%;
+      width: 80vw;
+      font-size: 20px;
+    }
+    .quotes {
+      position: relative;
+      border: solid 1px #212121;
+      padding: 65px 50px 60px 60px;
+      background-color: white;
+      border-radius: 22px;
+      border-color: transparent;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: black;
+      width: 72vw;
+      margin-left: 2%;
+      padding-bottom: 8%;
+      /* font-size: 0.5em; */
+  }
+  .theQuotes{
+    margin-bottom: -6%;
+    font-size: 13px;
+  }
+  .theQuotes h2{
+    padding-left: 22%;
+  }
+  footer {
+    background-image: linear-gradient(#212A31, #2E3944);
+    color: white;
+    justify-content:space-between;
+  }
+  .footer-content{
+      padding-top: 12%;
+    line-height: 3;
+    font-size: 120%;
+    display:block;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .copy-right{
+    margin-left: -28%;
+    color:#ffbf00;
+  }
+  .footer-nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5cm;
+    font-size: 0.9em;
+    margin-left: -10%;
+  }
+  .location{
+    line-height: 1;
+  }
+  .location p:nth-child(2){
+    font-size: small;
+  }
+  footer input{
+    padding:3%;
+    width:100%;
+  }
+  .socials i{
+  margin-left: 10px;
+  font-size: large;
+  }
+  .socials{
+    line-height: 1;
+  }
+  #mailbox{
+    padding:3%;
+    width:30%;
+    border-radius: 50px;
+    border-color: transparent;
+  }
+  #like-section {
+      text-align: center;
+      margin-top: 0.5%;
+    }
+    #like-btn {
+      background-color: #FF4D6D;
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 3px 3px ;
+      cursor: pointer;
+    }
+    #like-btn:hover {
+      background-color: #004D4D;
+      color: #FF4D6D;
+    }
+    #like-count {
+      font-size: medium;
+      color: white;
+    }
+    .visual-img{
+      width: 20vw;
+      margin-left: 5%;
+    }
+    .feedback{
+      margin-left: -30%;
+    }
+    footer {
+      background-image: linear-gradient(#212A31, #2E3944);
+      color: white;
+      width: 80vw;
+    }
+    .prev, .next{
+      /* position: absolute; */
+      border-color: rgb(87, 86, 86);
+      transition: 0.6s ease;
+      user-select: none;
+      
    }
-    .image img{
-        border: 14px solid white;
-        width: 90%;
-        height: 40vh;
-        margin-bottom: 20%;
-        opacity: 0.5;
+    .prev{
+      margin-left: 3%;
+      margin-top: -2%;
     }
-    .container{
-        margin-left: 5%;
-        margin-top: 2%;
+    .next{
+      margin-top: -2%;
+      margin-left: 90%;
     }
-    .naming-book{
-        position: unset;
-        width: 70vw;
-        height: 55vw;
-        background-color: white;
-        line-height: 0.6cm;
-        backdrop-filter: 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        padding: 3%;
-        margin-top: -20%;
-        margin-left: 8%;
-        transform: none;
-        border-radius: 15% 15%;
-    
+    .about-moral{
+      font-size: 0.3in;
+      font-weight:700;
     }
-    .naming-book img{
-        width: 15vw;
-        height: 7vh;
-        border-radius:50% 50%;
-        border: 3px solid rgb(4, 4, 37);
-        margin-top: -10%;
-        margin-left: 37%;
+    .about-moral h3{
+      color: rgba(197, 158, 107, 0.897);
+      font-weight: 800;
+      font-size: 0.4in;
     }
-    .review p{
-        line-height: 0.6cm;
-        margin: 4%;
+    #image2{
+      border-radius: 22px;
+      width: 57vw;
+      /* position: absolute; */
+      right: 100px;
+      top: -12%;
+      box-shadow: 22px 25px 15px -10px rgba(0,0,0,0.4);
     }
-    .icons{
-        display: flex;
-        justify-content: center;
-        gap: 1cm;
-        margin-top: 12%;
+    #image1{
+      width: 57vw;
+      border-radius: 20px;
+      box-shadow: 22px 25px 15px -10px rgba(0,0,0,0.4);
     }
-    .review{
-        width: 90vw;
-        height: 105vh;
-        background-color: white;
-        opacity: 0.8;
-        border-radius: 5%;
-        box-shadow: 12px 15px 12px rgb(63, 63, 148),12px 15px 12px rgb(63, 63, 148);
+    .picture-section{
+      position: relative;
+      margin-left: 21%;
+      margin-right: 30%;
+      margin-bottom: 10%;
+      margin-top: 10%;
     }
-    .about h2{
-        position: absolute;
-        margin-top: -65%;
-        margin-left: 25%;
-        color: white;
-        font-size: 1.5em;
+    #pic{
+      width: 33vw;
+      height: 30vh;
     }
-}
+    #pics{
+      width: 32vw;
+      height: 30vh;
+    }
+    #second-pic{
+      width: 33vw;
+      height: 30vh;
+    }
+    #third-pic{
+      width: 41vw;
+      height: 30vh;
+    }
+    #fourth-pic{
+      height: 31vh;
+    }
+    #fifth-pic{
+      width: 33vw;
+      height: 30vh;
+    }
+    #last-pic{
+      width:30vh;
+    }
+    .images {
+      width: 90vw;
+      overflow: hidden;
+      /* white-space: nowrap; */
+      animation: scroll-left 10s linear infinite;
+    }
+   @keyframes scroll-left {
+      from {
+        transform: translateX(30%);
+      }
+      to {
+        transform: translateX(-30%);
+      }
+    } 
+  }

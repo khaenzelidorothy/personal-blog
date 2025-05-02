@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="personalBlog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">
+            <nav>
+                <div class="name">
+                    <h2>MORAL DIMENSION</h2>
+                </div>
+                    <a href="index.html">Home</a>
+                    <a href="books.html">Books</a>
+                    <a href="blogsPage.html">Blogs</a>
+                    <a href="aboutus.html">About Us</a>
+                    <div id="like-section">
+                    </div>
+                <div class="icons">
+                    <span><a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp "></i></a></span>
+                    <span><a href="https://www.facebook.com/"><i class="fa fa-facebook "></i></a></span>
+                </div>
+            </nav>
+        </section>
+        <div class="blog">
+            <h1>Gender roles and relationship expectations in today's society</h1>
+            <p>29th April</p>
+        </div>
+        <div class="image">
+            <img src="images/los-angeles-8205184_640.jpg" alt="">
+        </div>
+        <div class="about">
+            <p>
+                Traditional  societal expectations of gender roles , whereby  men are expected to be solely providers while women are responsible for house chores
+                 and taking care of the kids is portrayed as a crime . However, Patricia diligently challenges the traditional marriage ideals about a 
+                    woman's place, in that Abel wants her to act like a subservient woman. She  questions the norm by being a strong, independent
+                         woman who works tirelessly to support her family and raising her child,Trevor. She gets to a point where she leaves 
+                         her job to support her husband's hustle, however it turns out she overpowered the husband's responsibility. 
+                            Through all this Abel started developing   hate towards Patricia, in that she made him inferior, 
+                                powerless and lost his position as 'head of family' .<br><br>
+
+            Abel started feeling the need to control Patricia and claim back his position  after she started helping him in his business. He felt incompetent and 
+                weak infront of her hence the urge to overpower her just to feel whole and complete as a man.
+            
+            Despite Patricia having a career and a place of her own, she was viewed as abel's wife, the title society expects from her. They expected her to shrink 
+                 being termed as abel's wife, the thought “what will people say” pushed abel's expectations to cage patricia, as he viewed her as disrespectful.
+                     Interestingly, modern men prefer having an independent woman in that they can share responsibilities but the woman is still expected
+                         to do house chores. This is very ironic such that despite them sharing responsibilities, the men still want to feel superior
+                                     and in control by belittling their women.
+            </p>
+            <br><br>
+            <p>Acknowledgement: Trevoh Noah</p>
+        </div>
+
+    </div>
+    <footer>
+        <div class="feedback">
+        <h2>SEND FEEDBACK</h2>
+        <textarea name="" id="feedback" cols="50" rows="10"></textarea>
+    </div>
+        <hr>
+                <div class="footer-content">
+                <div class="footer-nav">
+                    <img class="visual-img" src="images/visual (1).svg" alt="Background images of books reviews ">
+                    <a href="index.html">Home</a>
+                    <a href="books.html">Books</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="location">
+                    <p>Where you can find us</p>
+                    <p>Nairobi, Kenya. 616 Korongo Road</p>
+                    <img src="images/map.jpeg">
+                </div>
+                <div class="mailbox">
+                    <label for="review">Get the next review straight to your mailbox.</label><br>
+                    <input id="review" aria-placeholder="Enter your email here *" placeholder="Enter your email here *"><br>
+                    <a href="mailto:khaenzelidorothy@gmail.com"><button id="mailbox" type="submit">Join</button></a>
+                </div>
+                <div class="socials">
+                    <p>Follow us on</p>
+                <a href="https://github.com/akirachix"><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/AkiraChix/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/akirachix/posts/?feedView=all"><i
+                        class="fa fa-linkedin"></i></a>
+                    </div>
+            </div>
+            <div id="like-section">
+                <button id="like-btn" type="button"><i class="fa fa-heart"></i></button>
+                <span id="like-count">0 Likes</span>
+            </div>
+            <script>
+                let likeCount = 0;
+                        document.getElementById('like-btn').addEventListener('click', function () {
+                            likeCount++;
+                            document.getElementById('like-count').innerText = likeCount + " Likes"
+                        }); 
+                </script>
+                <section class="copy-right">
+                    <p>Contact us: narrativenavigators@akirachix.com</p>
+                    <p>&copy; Book Lands</p>
+                </section>
+            </footer>
+</body>
+</html>

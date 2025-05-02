@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 26%;
+    margin-right: 26%;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.blog h1{
+    font-size: 0.6in;
+}
+.blog p{
+    font-size: 15px;
+}
+.image img{
+    width: 44vw;
+}
+.about p{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color:white;
+  }
+  .navigation{
+    color: white;
+  }
+  nav {
+    background-image: linear-gradient(#212A31, #2E3944);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    position: sticky;
+    width: 100%;
+    padding: 1%;
+  }
+  nav a {
+    font-weight: bolder;
+  }
+  nav a:hover {
+    color: #FFBF00;
+  }
+  .navbar li{
+    display: flex;
+  }
+  #like-section {
+    text-align: center;
+    margin-top: 0.5%;
+  }
+  #like-btn {
+    background-color: #FF4D6D;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px 5px ;
+    cursor: pointer;
+  }
+  #like-btn:hover {
+    background-color: #004D4D;
+    color: #FF4D6D;
+  }
+  #like-count {
+    font-size: medium;
+    color: white;
+  }
+  .feedback{
+    padding-left: 20%;
+    margin-bottom: 2%;
+  }
+  footer {
+    background-image: linear-gradient(#212A31, #2E3944);
+    color: white;
+    justify-content:space-between;
+  }
+  .footer-content{
+    line-height: 3;
+    font-size: 120%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .copy-right{
+    text-align: center;
+    color:#ffbf00;
+  }
+  .footer-nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .location{
+    line-height: 1;
+  }
+  .location p:nth-child(2){
+    font-size: 0.7em;
+  }
+  footer input{
+    padding:3%;
+    width:100%;
+  }
+  .socials i{
+  margin-left: 10px;
+  font-size: large;
+  }
+  .socials{
+    line-height: 1;
+  }
+  #mailbox{
+    padding:3%;
+    width:30%;
+    border-radius: 50px;
+    border-color: transparent;
+  }
+  @media screen and (min-width: 320px) and (max-width: 950px){
+    
+  }
+
