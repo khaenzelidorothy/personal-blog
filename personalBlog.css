@@ -112,6 +112,9 @@ a{
     border-radius: 50px;
     border-color: transparent;
   }
+  #review{
+   width: 65%;
+  }
   @media screen and (min-width: 320px) and (max-width: 950px){
     
   }

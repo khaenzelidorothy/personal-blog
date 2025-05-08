@@ -43,13 +43,10 @@ nav {
   background-image: linear-gradient(#212A31, #2E3944);
   display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   position: sticky;
   width: 100%;
   padding: 1%;
-}
-.navbar a{
-  justify-content: space-between;
 }
 nav a {
   font-weight: bolder;
@@ -57,6 +54,9 @@ nav a {
 }
 nav a:hover {
   color: #FFBF00;
+}
+.navbar a{
+  gap: 2cm;
 }
 .explore{
   display: flex;
@@ -270,22 +270,28 @@ nav a:hover {
     body{
       font-size: 0.7em;
       overflow-x: hidden;
+      /* width: 160vw; */
     }
     .container{
       overflow-x: hidden;
-      margin-right: 10%;
+      /* margin-right: 10%; */
     }
     nav {
       background-image: linear-gradient(#212A31, #2E3944);
-      display: block;
-      justify-content: space-around;
-      align-items:center;
+      /* display: block; */
+      /* justify-content: space-around; */
+      /* align-items:center; */
+      /* gap: 0.3cm; */
       position: sticky;
-      width: 100%;
+      width: 130%;
       padding: 1%;
+      font-size: 0.7em;
     }
     .navbar li{
       display: block;
+    }
+    .name{
+      margin-left: -7%;
     }
     nav a{
       font-size: 1.2em;
@@ -293,7 +299,7 @@ nav a:hover {
     .navigation{
       background: url(images/book.png);
       background-size: cover;
-      width: 80vw;
+      width: 100vw;
       height: 70vh;
       background-repeat: no-repeat;
       background-color: rgba(0,0,0,0.6);
@@ -310,6 +316,7 @@ nav a:hover {
       padding: 4% 12%;
       border-radius: 32px 32px;
       border-color: transparent;
+      margin-left: 12%;
     }
     .explore button:hover{
       border-radius: 32px;
@@ -326,15 +333,15 @@ nav a:hover {
     .explore h2{
       font-size: 0.3in;
       /* font-size: 0.5em; */
-      margin-top: -22%;
-      margin-left: 2%;
+      margin-top: -2%;
+      margin-left: 9%;
       line-height: 1.2cm;
     }
     .moral{
       display: block;
       gap: 10%;
       padding: 2%;
-      width: 80vw;
+      width: 100vw;
       font-size: 20px;
     }
     .quotes {
@@ -402,7 +409,7 @@ nav a:hover {
   }
   #mailbox{
     padding:3%;
-    width:30%;
+    width:20%;
     border-radius: 50px;
     border-color: transparent;
   }
@@ -435,9 +442,10 @@ nav a:hover {
       margin-left: -30%;
     }
     footer {
+      padding-left: 10%;
       background-image: linear-gradient(#212A31, #2E3944);
       color: white;
-      width: 80vw;
+      width: 100vw;
     }
     .prev, .next{
       /* position: absolute; */
